@@ -1,2 +1,2 @@
 # watch-out
-Sniffing and phising network faker
+An easy-to-use router copier that allows for a wide range of sniffing or phishing activities.
