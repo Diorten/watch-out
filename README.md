@@ -3,4 +3,5 @@ An easy-to-use router copier that allows for a wide range of sniffing or phishin
 
 
 ## Preparations
-Before using script, you have to know if your network card supports AP mode, check it by `iw list`. Then 
+Before using script, you have to know if your network card supports AP mode, check it by typing `iw list` in your terminal.
+Then 
