@@ -35,27 +35,32 @@ check_dependecies()
     echo "OK"
     else
     echo "airmon-ng not found, check github README file"
+    exit 1
     fi
     if command -v airodump-ng &> /dev/null; then
     echo "OK"
     else
     echo "airodump-ng not found, check github README file"
+    exit 1
     fi
     if command -v aireplay-ng &> /dev/null; then
     echo "OK"
     else
     echo "aireplay-ng not found, check github README file"
+    exit 1
     fi
     if command -v xterm &> /dev/null; then
     echo "OK"
     else
     echo "xterm not found, check github README file"
+    exit 1
     fi
 
     if [ -d "create_ap" ]; then
     echo "OK"
     else
     echo "create_ap is not installed, folder not found, check github README file"
+    exit 1
     fi
 }
 
