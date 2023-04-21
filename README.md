@@ -22,4 +22,5 @@ Script should install dependencies without any problems, but if there will happe
 1. Check if you have installed `airmon-ng` and `sudo aireplay-ng`
 2. Check if you have istalled tool called `create_ap`, and it's folder is with your script - without it you can't run AP and WiFi connection at the same time
 3. Find out `xterm` module installed in your system
-4. 
+4. Check if you have installed `hostapd` and `dhcpd` to run AP spot :)
+5. 
